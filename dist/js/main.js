@@ -56,6 +56,11 @@ for (var i = 0; i < navLinks.length; i++) {
     });
 }
 
+var results = document.getElementById('resultss');
+results.addEventListener('click', function(){
+    document.querySelector('.results').classList.add('is-active');
+})
+
 //Browser-level image lazy-loading
 if ('loading' in HTMLImageElement.prototype) {
     const images = document.querySelectorAll('img[loading="lazy"]');

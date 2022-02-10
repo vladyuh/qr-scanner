@@ -59,7 +59,7 @@
                 <svg width="24" height="24">
                   <use xlink:href="/img/sprites/sprite.svg#ic_camera"></use>
                 </svg><span>С камеры</span></a></li>
-            <li><a href="#">Результаты сканирования</a></li>
+            <li id="resultss"><a>Результаты сканирования</a></li>
           </ul>
         </div>
         <div class="mobileMenu-footer"></div>
@@ -70,8 +70,23 @@
         <div class="reader__preview">
           <div id="reader"></div>
         </div>
-        <div class="reader__options"></div>
-        <div class="reader__input">
+        <div class="results">
+          <div class="results__title">
+            <svg width="24" height="24">
+              <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+            </svg>
+            <div class="section-h3">Результаты</div>
+          </div>
+          <div class="tabs">
+            <div class="tabs__tab">Текущий</div>
+            <div class="tabs__tab">История</div>
+          </div>
+          <div class="results__text">Ничего не найдено...</div>
+        </div>
+        <div class="reader__input btn btn-round">
+          <svg width="24" height="24">
+            <use xlink:href="/img/sprites/sprite.svg#ic_upload"></use>
+          </svg><span>Выбрать файл</span>
           <input type="file" id="qr-input-file" accept="image/*">
         </div>
       </section>

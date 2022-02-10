@@ -13,7 +13,15 @@ block content
     section.reader
         .reader__preview
             #reader
-        .reader__options
+        .results
+            .results__title
+                +icons('#ic_close',24)
+                .section-h3 Результаты
+            .tabs
+                .tabs__tab Текущий
+                .tabs__tab История
+            .results__text Ничего не найдено...
+
 block scripts
     script(src="js/main.js")
     script(src="js/index.js")

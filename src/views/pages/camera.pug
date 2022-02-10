@@ -13,8 +13,17 @@ block content
     section.reader
         .reader__preview
             #reader
-        .reader__options
-        .reader__input
+        .results
+            .results__title
+                +icons('#ic_close',24)
+                .section-h3 Результаты
+            .tabs
+                .tabs__tab Текущий
+                .tabs__tab История
+            .results__text Ничего не найдено...
+        .reader__input.btn.btn-round
+            +icons('#ic_upload',24)
+            span Выбрать файл
             input(type="file" id="qr-input-file" accept="image/*")
 block scripts
     script(src="js/main.js")

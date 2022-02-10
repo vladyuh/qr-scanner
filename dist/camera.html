@@ -67,13 +67,25 @@
     </div>
     <main>
       <section class="reader">
-        <div class="reader__preview">
-          <div id="reader"></div>
+        <div class="container">
+          <div class="reader__preview">
+            <div id="reader"></div>
+          </div>
         </div>
-        <div class="reader__options"></div>
       </section>
+      <div class="reader__results">
+        <div class="container">
+          <div class="reader__resultsClose">
+            <svg width="24" height="24">
+              <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+            </svg>
+          </div>
+          <div class="section-h2">Результат</div>
+          <div class="reader__resultsText"></div>
+        </div>
+      </div>
     </main>
     <script src="js/main.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/camera.js"></script>
   </body>
 </html>

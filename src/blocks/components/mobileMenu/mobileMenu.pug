@@ -3,7 +3,12 @@ include ../../components/burger/burger
   .container
     .mobileMenu-header
       .mobileMenu-header__toggle
-        +burger('open')
+        +icons('#ic_close',24)
     .mobileMenu-nav
       ul.mobileMenu-nav__ul
+          li
+            a.btn.btn-round(href="#")
+                +icons('#ic_upload',24)
+                span С изображения
+          li: a(href="#") Результаты сканирования
     .mobileMenu-footer

@@ -11,19 +11,9 @@ block variables
     - const title = "Главная"
 block content
     section.reader
-        .container
-            .reader__preview
-                #reader
-            .reader__btn#reader__btn
-                +icons('#ic_search',24)
-            .reader__stop#reader__stop
-                +icons('#ic_close',24)
-    .reader__results
-        .container 
-            .reader__resultsClose
-                +icons('#ic_close',24)
-            .section-h2 Результат
-            .reader__resultsText
-            .btn.btn-round Скопировать
+        .reader__preview
+            #reader
+        .reader__options
 block scripts
     script(src="js/main.js")
+    script(src="js/index.js")

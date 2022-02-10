@@ -5,9 +5,9 @@
     left: 0;
     bottom: 0;
     width: 300px;
-    background: #eee;
+    background: #fff;
     transition: transform 0.3s ease;
-    overflow-y: scroll;
+    overflow-y: auto;
     z-index: 4;
 
     @media screen and (max-width: 1152px){

@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
 function initQr() {
     const html5QrCode = new Html5Qrcode("reader");
     const qrCodeSuccessCallback = (decodedText, decodedResult) => {
-        alert(decodedText);
+        alert("Результаты сканирования: " + decodedText);
     };
     const config = {
         fps: 10,

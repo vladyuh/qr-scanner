@@ -20,11 +20,11 @@ function initQr(){
         html5QrCode.scanFile(imageFile, true)
             .then(decodedText => {
                 // success, use decodedText
-                alert(decodedText);
+                alert("Результаты сканирования: " + decodedText);
             })
             .catch(err => {
                 // failure, handle it.
-                console.log(`Error scanning file. Reason: ${err}`)
+                alert("Ошибка сканирования: " + err);
             });
     });
 }

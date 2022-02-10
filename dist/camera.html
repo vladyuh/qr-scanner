@@ -55,10 +55,10 @@
         </div>
         <div class="mobileMenu-nav">
           <ul class="mobileMenu-nav__ul">
-            <li><a class="btn btn-round" href="#">
+            <li><a class="btn btn-round" href="index.html">
                 <svg width="24" height="24">
-                  <use xlink:href="/img/sprites/sprite.svg#ic_upload"></use>
-                </svg><span>С изображения</span></a></li>
+                  <use xlink:href="/img/sprites/sprite.svg#ic_camera"></use>
+                </svg><span>С камеры</span></a></li>
             <li><a href="#">Результаты сканирования</a></li>
           </ul>
         </div>
@@ -67,23 +67,14 @@
     </div>
     <main>
       <section class="reader">
-        <div class="container">
-          <div class="reader__preview">
-            <div id="reader"></div>
-          </div>
+        <div class="reader__preview">
+          <div id="reader"></div>
+        </div>
+        <div class="reader__options"></div>
+        <div class="reader__input">
+          <input type="file" id="qr-input-file" accept="image/*">
         </div>
       </section>
-      <div class="reader__results">
-        <div class="container">
-          <div class="reader__resultsClose">
-            <svg width="24" height="24">
-              <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
-            </svg>
-          </div>
-          <div class="section-h2">Результат</div>
-          <div class="reader__resultsText"></div>
-        </div>
-      </div>
     </main>
     <script src="js/main.js"></script>
     <script src="js/camera.js"></script>

@@ -20,8 +20,7 @@ function initQr(){
         html5QrCode.scanFile(imageFile, true)
             .then(decodedText => {
                 // success, use decodedText
-                document.querySelector('.reader__results').classList.add('is-active');
-                document.querySelector('.reader__resultsText').textContent = "Распознанный текст " + decodedText;
+                alert(decodedText);
             })
             .catch(err => {
                 // failure, handle it.

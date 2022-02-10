@@ -68,6 +68,11 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-left: 300px;
+
+    @media screen and (max-width: 1152px){
+        padding-left: 0;
+    }
 }
 
 footer {

@@ -1,4 +1,4 @@
-extends ../layouts/default
+extends ../layouts/file
 include ../helpers/mixins
 include ../../blocks/components/breadcrumbs/breadcrumbs.pug
 include ../../blocks/components/form/form.pug
@@ -11,15 +11,11 @@ block variables
     - const title = "Главная"
 block content
     section.reader
-        .container
-            .reader__preview
-                #reader
-    .reader__results
-        .container
-            .reader__resultsClose
-                +icons('#ic_close',24)
-            .section-h2 Результат
-            .reader__resultsText
+        .reader__preview
+            #reader
+        .reader__options
+        .reader__input
+            input(type="file" id="qr-input-file" accept="image/*")
 block scripts
     script(src="js/main.js")
     script(src="js/camera.js")
